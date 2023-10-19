@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= wicked_pdf_stylesheet_link_tag 'pdf' %>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <img src="http://www.espol.edu.ec/sites/default/files/nuevaespol/logo_negro.png" style="width: 25%;" class="img-response" alt="">
+        </div>
+        <div class="">
+            <h1>ESCUELA SUPERIOR POLITÉCNICA DEL LITORAL</h1>
+        </div>
+        <div>
+            <% @answer.each do |pregunta| %>
+                <h3><%= pregunta[:n_pregunta] %></h3>
+                <ul>
+                    <li><%=raw pregunta[:data] %></li>
+                </ul>
+                <!-- <h3>pregunta1 (1.0 puntos)</h3> -->
+                <!-- <p>¿LA PREGUNTA A INSTANCIAS ES?</p>
+                <ul>
+                    <li>asdasd</li>
+                    <li>asdasdasd</li>
+                    <li>asdasd</li>
+                    <li>asdasdas</li>
+                </ul> -->
+        
+            <% end %>   
+        </div>
+    </div>
+</body>
+</html>

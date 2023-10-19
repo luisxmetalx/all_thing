@@ -26,6 +26,11 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem 'httparty', '~> 0.13.7'
+gem 'jwt'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
